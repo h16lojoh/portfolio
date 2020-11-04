@@ -3,11 +3,18 @@ Title: Home
 Description: This is our index page.
 ---
 
-Home page
-==========================
+<article class="redovisning">
 
-The source for this page is in `content/index.md`.
+<h1>Om mig</h1>
+    
 
-This is a sample home page written in markdown with some frontmatter defined.
+<p>
+        Mitt namn är Louise Johansson. Jag kommer ursprungligen från Åland, Finland men bor just nu i Dalarna, Gagnef kommun. 
+        Jag har tidigare studerat en kandidatexamen i informatik. 
+        Under de studierna fastnade jag för webbutvecklingen och programmering och ville fördjupa mig i det. 
+        Då fann jag BTH webbprogrammering!
+</p>
+</article>
 
-The pages make up a Anax site for demonstration purpose, it is something to start from.
+<img src="./assets/img/me.jpg" alt="bild på louise johansson" width="300" height="auto">
+

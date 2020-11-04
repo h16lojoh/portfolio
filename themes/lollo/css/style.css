@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header and Footer */
+
+.site-footer, .site-header{
+    flex: 0 0 auto;
+    padding: 0 2em;
+    background-color: #ccc;
+    color: #333434;
+}
+
+.footer p {
+    margin: 0;
+    padding: 3em 0;
+}
+
+.footer .social {
+    float: right;
+    padding: 1.5em 0 1.5em 1em;
+    font-size: 2rem;
+}
+
+.logo {
+
+        display: block;
+        float: left;
+        width: 2em;
+        margin: 0.6667em 0;
+        font-size: 1.5rem;
+        line-height: 2em;
+        text-align: center;
+        cursor: pointer;
+        
+    }
+.logo a {
+    vertical-align: middle;
+}
+
+/* Main */
+
+.main {
+    flex: 1 0 auto;
+    padding: 2em;
+}
+
+
+/*** BASIC LAYOUT ***/
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1 0 auto;
+}
+
+.header, .footer {
+    flex: 0 0 auto;
+}
+
+.main {
+    padding: 5em 0 4em;
+}
+
+.container {
+    max-width: 48em;
+    padding: 0 0.5em;
+    margin: 0 auto;
+}
+
+.widescreen .container {
+    max-width: 72em;
+}
+
+
+
+
+
+
+article {
+    margin: 8px auto;
+    max-width: 600px;
+}
+
+h1 {
+    border-bottom: 1px solid #666;
+    margin: 15px 0;
+}
+
+h2 {
+    border-bottom: 1px solid #ccc;
+    margin: 10px 0;
+}
+h3{
+    
+    margin: 10px 0;
+    
+}
