@@ -34,12 +34,10 @@
     display: inline-block;
     margin-left: 1em;
     padding: 0;
-    font-weight: bold;
 }
 
 #nav ul li a {
     letter-spacing: 2px;
-    text-transform: uppercase;
 }
 
 #nav a:hover, #nav-toggle:hover {

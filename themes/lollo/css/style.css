@@ -19,8 +19,15 @@ body {
 .site-footer, .site-header{
     flex: 0 0 auto;
     padding: 0 2em;
-    background-color: #ccc;
-    color: #333434;
+    background: rgb(9,9,121);
+    background: linear-gradient(135deg, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
+    color: #fff;
+    text-decoration: none !important;
+}
+
+.site-footer a:visited, .site-header a:visited{
+    color: #fff;
+    text-decoration: none !important;
 }
 
 .footer p {
