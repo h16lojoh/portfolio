@@ -1,6 +1,7 @@
 ---
-Title: Report for kmom01
-Description: Markdown examples.
+Title: Kmom01
+Description: Redovisning av kmom01.
+Template: kmom
 # hidden: true
 ---
 

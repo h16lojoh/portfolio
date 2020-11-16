@@ -6,7 +6,7 @@ Description: About -page.
 
 
     
-<section>
+
 <h1>Om Temat</h1>
 <p>
 I detta tema används scss, fontawesome och google-fonts.
@@ -24,5 +24,4 @@ Typsnittet som används är Roboto. Ikoner som används är GitHub ikon i footer
     <i class="fab fa-sass"aria-hidden="true"></i>
     <span class="sr-only">Länk till sass</span>
 </a>
-<section>
 

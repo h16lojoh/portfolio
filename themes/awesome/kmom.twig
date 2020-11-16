@@ -63,13 +63,39 @@
     </header>
 
 
+    <ul class="breadcrumb">
+        {% for page in pages(depthOffset=-1) if page.title and not page.hidden %}
+            <li{% if page.id == current_page.id %} class="active"{% endif %}>
+                <a href="{{ page.url }}">{{ page.title }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+
+
     <div class="main" id="main" role="main">
         <div class="container">
 
-            {{ content }}
-            
+            <div class="kmom">
+
+                <ul class="sidebar">
+                    {% for page in pages("report") %}
+                        <li{% if page.id == current_page.id %} class="active"{% endif %}>
+                            <a href="{{ page.url }}">{{ page.title }}</a>
+                        </li>
+                    {% endfor %}
+                </ul>   
+
+                <div class="kmomcontent">
+                    {{ content }}
+                </div>
+                
+            </div>
+
+
+
         </div>
     </div>
+
 
     <footer class="site-footer">
         <div class="footer">

@@ -65,11 +65,26 @@
 
     <div class="main" id="main" role="main">
         <div class="container">
+            <div class="landingpage">
+                    {{ content }}
+                    {% for page in pages("report") %}
+                        
 
-            {{ content }}
+                            <div class="kmom-box">
+
+                                <h2>{{ page.title }}</h2>
+                                <a href="{{ page.url }}"><i class="fas fa-angle-right"></i></a>
+                                <span class="prev">{{ page.description }}</span>
+                            </div>
+
+                        
+                    {% endfor %}
+
             
+            </div>
         </div>
     </div>
+
 
     <footer class="site-footer">
         <div class="footer">

@@ -1,0 +1,43 @@
+
+/* kmom.scss */
+
+.kmom {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 5em;
+}
+
+.sidebar {
+    grid-column: 1;
+    grid-row: 1;
+    padding-top: 10px;
+    color: #000;
+
+    li {
+        padding: 5px 0;
+        font-weight: 600;
+        list-style-type: none;
+    }
+} 
+                   
+.kmomcontent {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+/* Small devices */
+
+@media (max-width: 767px) {
+    .kmom {
+        grid-template-columns: auto;
+    }
+    
+    .sidebar {
+        display: none;
+    }
+                       
+    .kmomcontent {
+        grid-column: auto;
+    }
+    
+}

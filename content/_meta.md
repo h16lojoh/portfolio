@@ -6,6 +6,6 @@ Social:
       url: https://github.com/h16lojoh/portfolio
       icon: fab fa-github
 nav:
-    title: Toggle meu
-    icon: fa fa-bars
+    - title: Toggle meu
+      icon: fa fa-bars
 ---

@@ -1,10 +1,9 @@
 ---
 Title: Report
-Description: Markdown examples.
-# hidden: true
+Description: This is my report page.
+Template: report
 ---
 
 
-* [kmom01](report/kmom01)
-
-* [kmom02](report/kmom02)
+Report
+==========================

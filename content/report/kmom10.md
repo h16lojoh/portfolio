@@ -1,11 +1,10 @@
 ---
-Title: Kmom02
-Description: Redovisning av kmom02.
+Title: Projekt
+Description: Redovisning av design-projekt.
 Template: kmom
 
 # hidden: true
 ---
-
 
 
 
