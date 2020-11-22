@@ -6830,8 +6830,13 @@ readers do not read off random characters that represent icons */
 
 #nav ul li {
   display: inline-block;
-  margin-left: 1em;
-  padding: 0;
+  padding-left: 1em;
+  padding-right: 1em;
+  border-right: solid 1px #fff;
+}
+
+#nav ul li:last-child {
+  border-right: none;
 }
 
 #nav ul li a {
@@ -6893,6 +6898,8 @@ readers do not read off random characters that represent icons */
 html {
   height: 100%;
   height: 100%;
+  background-color: #fff;
+  color: #000;
 }
 
 a {
@@ -6914,17 +6921,23 @@ body {
 .site-footer {
   flex: 0 0 auto;
   padding: 0 2em;
-  background: #090979;
-  background: linear-gradient(135deg, #090979 0%, #00d4ff 100%);
-  color: #fff;
+  color: #000;
   text-decoration: none !important;
+  background: #cbbfee;
 }
 .site-header a,
 .site-header a:visited,
 .site-footer a,
 .site-footer a:visited {
-  color: #fff;
+  color: #000;
   text-decoration: none !important;
+}
+
+.site-header {
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .footer p {
@@ -6953,7 +6966,7 @@ body {
 .breadcrumb {
   padding: 10px 16px;
   list-style: none;
-  background-color: #eee;
+  background-color: #7968ae;
 }
 .breadcrumb li {
   display: inline;
@@ -6987,12 +7000,12 @@ body {
 }
 
 h1 {
-  border-bottom: 1px solid #666;
+  border-bottom: 1px solid #7968ae;
   margin-bottom: 10px;
 }
 
 h2 {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #7968ae;
   margin-top: 15px;
   margin-bottom: 10px;
 }
@@ -7039,7 +7052,7 @@ p {
   display: block;
   height: 25px;
   width: 25px;
-  background-color: #73acd4;
+  background-color: #7968ae;
   text-decoration: none !important;
 }
 .kmom-box i,
@@ -7052,7 +7065,6 @@ p {
 }
 .kmom-box h2,
 .kmom-box.project h2 {
-  background-color: #535353;
   margin: 0;
   padding: 15px;
   color: #fff;
@@ -7082,6 +7094,7 @@ p {
   border-radius: 5px;
   overflow: hidden;
   position: relative;
+  background-color: #cbbfee;
 }
 .kmom-box:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
@@ -7094,7 +7107,7 @@ p {
   display: block;
   height: 25px;
   width: 25px;
-  background-color: #73acd4;
+  background-color: #7968ae;
   text-decoration: none !important;
 }
 .kmom-box i {
@@ -7105,9 +7118,10 @@ p {
   line-height: 25px;
 }
 .kmom-box h2 {
-  background-color: #535353;
+  background-color: #7968ae;
   margin: 0;
   padding: 15px;
+  margin-bottom: 20px;
   color: #fff;
   font-size: 20px;
   font-weight: 400;
@@ -7147,7 +7161,6 @@ p {
   grid-column: 1;
   grid-row: 1;
   padding-top: 10px;
-  color: #000;
 }
 .sidebar li {
   padding: 5px 0;

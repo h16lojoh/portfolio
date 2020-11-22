@@ -1,5 +1,6 @@
 ---
 Logo: image/logo.png
+bg: image/background.jpg
 Tagline: My portfolio.
 Social:
     - title: Link till sidans github repo.

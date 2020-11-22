@@ -19,6 +19,7 @@
     border-radius: 5px;
     overflow: hidden;
     position: relative;
+    background-color: $color-decor-second;
 
     &:hover {
         box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
@@ -32,7 +33,7 @@
         display: block;
         height: 25px;
         width: 25px;
-        background-color: #73acd4;
+        background-color: $color-decor;
         text-decoration: none !important;
     }
 
@@ -40,15 +41,16 @@
         display: block;
         text-align: center;
         display: block;
-        color: #fff;
+        color: $color-decor-text;
         line-height: 25px;
     }
 
     h2 {
-        background-color: #535353;
+        background-color: $color-decor;
         margin: 0;
         padding: 15px;
-        color: #fff;
+        margin-bottom: 20px;
+        color: $color-decor-text;
         font-size: 20px;
         font-weight: 400;
     }

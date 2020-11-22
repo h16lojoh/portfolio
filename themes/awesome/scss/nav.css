@@ -32,8 +32,13 @@
 
 #nav ul li {
     display: inline-block;
-    margin-left: 1em;
-    padding: 0;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-right: solid 1px #fff;
+}
+
+#nav ul li:last-child {
+    border-right: none;
 }
 
 #nav ul li a {
