@@ -65,25 +65,23 @@
 
     <div class="main" id="main" role="main">
         <div class="container">
-
-            <div class="kmom">
-
-                <ul class="sidebar">
-                    {% for page in pages("report") %}
-                        <li{% if page.id == current_page.id %} class="active"{% endif %}>
-                            <a href="{{ page.url }}">{{ page.title }}</a>
-                        </li>
-                    {% endfor %}
-                </ul>   
-
-                <div class="kmomcontent">
+            <div class="landingpage">
                     {{ content }}
-                </div>
-                
+                    {% for page in pages("analysis") %}
+                        
+
+                            <div class="kmom-box analysis-box">
+
+                                <h2>{{ page.title }}</h2>
+                                <a href="{{ page.url }}"><i class="fas fa-angle-right"></i></a>
+                                <span class="prev">{{ page.description }}</span>
+                            </div>
+
+                        
+                    {% endfor %}
+
+            
             </div>
-
-
-
         </div>
     </div>
 

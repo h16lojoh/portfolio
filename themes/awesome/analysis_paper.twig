@@ -69,7 +69,7 @@
             <div class="kmom">
 
                 <ul class="sidebar">
-                    {% for page in pages("report") %}
+                    {% for page in pages("analysis") %}
                         <li{% if page.id == current_page.id %} class="active"{% endif %}>
                             <a href="{{ page.url }}">{{ page.title }}</a>
                         </li>

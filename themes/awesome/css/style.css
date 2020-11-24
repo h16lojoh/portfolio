@@ -7076,6 +7076,19 @@ p {
   grid-column: span 3;
 }
 
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #ddd;
+  text-align: left;
+  padding: 8px;
+}
+
 /* report.scss */
 .landingpage {
   display: grid;
@@ -7125,6 +7138,10 @@ p {
   color: #fff;
   font-size: 20px;
   font-weight: 400;
+}
+
+.analysis-box:last-child {
+  grid-column: span 1 !important;
 }
 
 .kmom-box:last-child {

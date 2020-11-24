@@ -1,8 +1,10 @@
 ---
-Title: analysis
-Description: This is my report page.
-
+Title: Analysis
+Description: This is my analysis page.
+Template: analysis
 ---
 
-Webben och färg
-=======================
+
+
+Analys
+==========================

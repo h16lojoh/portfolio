@@ -1,5 +1,5 @@
 ---
-Title: Om sidan
+Title: Om temat
 Description: About -page.
 # hidden: true
 ---

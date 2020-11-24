@@ -56,6 +56,10 @@
     }
 }
 
+.analysis-box:last-child {
+    grid-column: span 1 !important;
+}
+
 .kmom-box:last-child {
     grid-column: span 3;
 }
