@@ -6,8 +6,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "stylelint \"**/*.scss\"",
-    "style": "sass awesome/scss/style.scss awesome/css/style.css --no-source-map",
-    "style-min": "sass awesome/scss/style.scss awesome/css/style.min.css --no-source-map --style compressed"
+    "watch": "sass awesome/scss/style.scss:awesome/css/style.css awesome/scss/style-dark.scss:awesome/css/style-dark.css --no-source-map --watch",
+    "watch-min": "sass awesome/scss/style.scss:awesome/css/style.min.css awesome/scss/style-dark.scss:awesome/css/style-dark.min.css --no-source-map --watch --style compressed",
+    "style": "npm run style-light && npm run style-dark",
+    "style-min": "npm run style-light-min && npm run style-dark-min",
+    "style-dark": "sass awesome/scss/style-dark.scss awesome/css/style-dark.css --no-source-map",
+    "style-dark-min": "sass awesome/scss/style-dark.scss awesome/css/style-dark.min.css --no-source-map --style compressed",
+    "style-light": "sass awesome/scss/style.scss awesome/css/style.css --no-source-map",
+    "style-light-min": "sass awesome/scss/style.scss awesome/css/style.min.css --no-source-map --style compressed"
   },
   "keywords": [],
   "author": "",

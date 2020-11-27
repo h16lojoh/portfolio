@@ -12,9 +12,20 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 
 @import 'nav';
 
-@import 'style-light';
-//@import 'style-dark';
+//Variables light theme
+$color-decor: #7968ae;
 
+$color-decor-second: #cbbfee;
+
+$color-decor-text: #fff;
+
+$color-bg: #fff;
+
+$color-text: #000;
+
+$font-family-title: 'Raleway', sans-serif;
+
+$font-family-text: 'Open Sans', sans-serif;
 
 
 // layout.scss
