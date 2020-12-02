@@ -9,33 +9,32 @@ Template: kmom
 
 
 <section>
-    <h2>Kmom02</h2>
-    <h3>Vad tycker du om SASS än så länge?</h3>
+    <h2>Kmom05</h2>
+    <h3>Berätta kort om erfarenheterna med din undersökning av webbplatsers laddningstid och vad du kom fram till</h3>
     <p>
-        Jag har testat på det tidigare, men det var mycket mer oavancerat än vad som gjordes i detta kmom. Jag tycker det känns väldigt användbart.
-        Jag tycker om strukturen för det blir mindre rader, och lättare för ögat.
+        Det jag har lärt mig är att bilder kan dra ner en webbplatsers hastighet rätt rejält om de är för stora. En annan sak är att man kan "lura" användarens uppfattning om hastigheten med hjälp av lite css som laddar in ett skellet av webbplatsens struktur medans allt annat laddas in på sidan i bakgrunden.
     </p>
-    <h3>Är du bekant med Node, npm eller npm scripts (t.ex. npm run lint) sedan tidigare? Vad anser du om det?</h3>
+    <h3>Har du några funderingar kring Cimage och dess nytta och features?</h3>
     <p>
-       Jag har använt det tidigare då jag skapade en todo-app med hjälp av bland annat vue.js. Tycker ännu det är lite svårt att förstå allt, men jag förstår mer än vad jag gjorde innan i alla fall! 
+       Inga funderingar, ser rätt klart nyttan med det! Det blir snabbt och smidigt när man vet hur man ska använda det. Skulle man ha en massa bilder på en webbplats som ska bytas ut emellanåt så är det ju en stor fördel att ha en återanvändbar kod istället för att manuellt ta in bilderna i Photoshop och ändra dem var för sig. Samt att ha två eller tre olika bilder beroende på skärmens-storlek känns onödigt, lättare att ha en och samma bild som man kan manipulera med cimage utan att förstöra orginalet.
     </p>
-    <h3>Hur kändes det att kompilera SASS till CSS, var det något du reflekterade över?</h3>
+    <h3>Vilka bildverktyg använder du själv normalt sett?</h3>
     <p>
-       Det kändes rätt smidigt. Jag kan förstå fördelar med att återanvända grundtema som man sen kan skriva över och ändra på. Lite som child-themes i WordPress.
-       Samt att det förenklar det avsevärt när man importerar delar som moduler istället. Det blir inte så mycket i en och samma fil.
+      Jag är inte van med cimage från förut och inte nått liknande verktyg heller. Jag har endast optimerat bilder för webb genom photoshop tidigare. Jag ser definitivt fördelen med att göra på det med cimage istället eftersom det blir ett extra steg som man skippar. 
     </p>
-    <h3>Kommentera ditt tema, hur kan man beskriva dess design och hade du några planer på “design” när du byggde ditt tema?</h3>
+    <h3>Vad är din egen allmänna uppfattning kring bilder för webben, nedladdningstider, responsiva bilder och allmänt kring bildbehandling för webben?</h3>
     <p>
-       Designen är inte så speciell ännu. Jag planerar att utveckla det mera framöver. Min plan var endast att hålla det rätt simple och rent tillsvidare. Jag fokuserar mer att förstå grunden till koden eftersom jag känner att frontend kunskaperna ligger lite före pga tidigare studier.
-    </p>
-    <h3>Valde du att dela upp din kod? Vilka uppdelningar valde du att göra?</h3>
-    <p>
-       Nja inte så mycket kanske. Jag hämtade min ikoner från meta istället för att ladda in dem på index sidan. Samma med loggan, att den hämtas från meta. Sen hade jag en css-kod som jag importerade in i min scss kod. Den koden skrevs i kmom01.
+       Min allmänna uppfattning kring bilder på webben är att de kan ha stor effekt på laddningstiden. Jag minns bra när man var liten ock klickade på en bild för att visa den i helskärmsläge och den laddade i evigheter! Nu är det ju lite mer optimerat men fortfarande är det viktig att en webbplats framförallt upplevs som snabb. Om jag tänker tillbaka på vad jag läste förra veckan om hur mycket färger påverkar en användares åsikt om en webbplats så nämdes även hur mycket användbarhet påverkar. Laddar en sidas bilder längre än man önskar så tror jag det är en stor chans att användaren kickar in sig på någon annans sida istället.
     </p>
     <h3>Vilken är din TIL för detta kmom?</h3>
     <p>
-       Min TIL för detta kmom är scss. Jag har testat på det förut men det var ett väldigt litet projekt. Den här gången kändes det som jag faktiskt utnyttjade det mera och förstod fördelarna med det.
+       Min TIL för detta kmom är cimage som jag inte har någon tidgare kunskap om. Ett annat TIL är hur man får till css responsiv för till exempel YouTube-klipp.
     </p>
+
+<div class="embed-container">
+    <iframe src="https://www.youtube.com/embed/jNQXAC9IVRw" frameborder="0"></iframe>
+</div>
+
     
 </section>
 
