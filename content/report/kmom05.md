@@ -12,7 +12,7 @@ Template: kmom
     <h2>Kmom05</h2>
     <h3>Berätta kort om erfarenheterna med din undersökning av webbplatsers laddningstid och vad du kom fram till</h3>
     <p>
-        Det jag har lärt mig är att bilder kan dra ner en webbplatsers hastighet rätt rejält om de är för stora. En annan sak är att man kan "lura" användarens uppfattning om hastigheten med hjälp av lite css som laddar in ett skellet av webbplatsens struktur medans allt annat laddas in på sidan i bakgrunden.
+        Det jag har lärt mig är att bilder kan dra ner en webbplatsers hastighet rätt rejält om de är för stora. Jag har även lärt mig att laddningstiden påverkar indexeringen i googles sökresultat. För själva analysen tycker jag att det blev lite ont om tid. Det var ganska mycket att mäta, tre sidor på tre olika webbplatser. Jag hann inte riktigt korrläsa och dubbelkolla mina mätningar. Men litteraturen var riktigt bra och lärorik! 
     </p>
     <h3>Har du några funderingar kring Cimage och dess nytta och features?</h3>
     <p>
