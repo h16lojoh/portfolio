@@ -12,12 +12,12 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 
 @import 'nav';
 
-//Variables light theme
-$color-decor: #7968ae;
+/*Variables dark theme*/
+$color-decor: #5e4f8a; //navbar and footer
 
-$color-decor-second: #cbbfee;
+$color-decor-second: #a593dd;
 
-$color-decor-text: #fff;
+$color-decor-text: #645590;
 
 $color-bg: #fff;
 
@@ -27,6 +27,8 @@ $font-family-title: 'Raleway', sans-serif;
 
 $font-family-text: 'Open Sans', sans-serif;
 
+$color-header: #fff;
+
 
 // layout.scss
 
@@ -35,6 +37,7 @@ $font-family-text: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    line-height: 1.6em;
 }
 
 html {
@@ -54,6 +57,14 @@ a {
 
 }
 
+a,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
 body {
     height: 100%;
     display: flex;
@@ -66,19 +77,18 @@ body {
 .site-footer {
     flex: 0 0 auto;
     padding: 0 2em;
-    color: $color-text;
     text-decoration: none !important;
-    background: $color-decor-second;
+    background: $color-decor;
+    color: #fff;
 
     a,
     a:visited {
-        color: $color-text;
+        color: #fff;
         text-decoration: none !important;
     }
 }
 
 .site-header {
-    height: 300px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -102,14 +112,19 @@ body {
     display: block;
     float: left;
     width: 2em;
-    margin: 0.6667em 0;
     font-size: 1.5rem;
-    line-height: 2em;
+    line-height: 2.5em;
     text-align: center;
     
     a {
         vertical-align: middle;
     }
+}
+
+
+.gallerydiv {
+    background-color: $color-decor-second !important;
+    color: $color-text !important;
 }
 
 .breadcrumb {
@@ -130,24 +145,19 @@ body {
     padding: 5em 0 4em;
 }
 
-.header {
-    flex: 0 0 auto;
-}
-
-
-
 .container {
     margin: 15px auto;
     max-width: 700px;
+    padding: 0 10px;
 }
 
 h1 {
-    border-bottom: 1px solid $color-decor;
+    border-bottom: 2px solid $color-text;
     margin-bottom: 10px;
 }
 
 h2 {
-    border-bottom: 1px solid $color-decor;
+    border-bottom: 1px solid $color-text;
     margin-top: 15px;
     margin-bottom: 10px;
 }
@@ -201,14 +211,14 @@ p {
         display: block;
         text-align: center;
         display: block;
-        color: $color-decor-text;
+        color: #fff;
         line-height: 25px;
     }
 
     h2 {
         margin: 0;
         padding: 15px;
-        color: $color-decor-text;
+        color: #fff;
         font-size: 20px;
         font-weight: 400;
     }
@@ -247,6 +257,91 @@ th {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+.header-container {
+    width: 100%;
+    height: 1000px;
+    background-color: $color-decor-second;
+    background-image: url('../../../assets/img/background.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.top-container {
+    padding: 30px;
+    max-width: 500px;
+    margin-top: 90px;
+}
+
+.header {
+    background-color: $color-decor;
+    padding: 5px 16px;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    color: #fff;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.stage {
+    vertical-align: baseline;
+    outline: none;
+    position: relative;
+    padding-left: 68px;
+    line-height: 1.4;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 16px;
+    font-size: 16px;
+}
+
+.stage::before {
+    content: '';
+    position: absolute;
+    top: 11px;
+    left: 0;
+    width: 52px;
+    height: 2px;
+    background: #000;
+}
+
+.title {
+    color: #000;
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 1.28571;
+    letter-spacing: -0.4px;
+    margin-bottom: 114px;
+    text-decoration: none;
+}
+
+@media (max-width: 992px) {
+    .title {
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 767px) {
+    .title {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 280px) {
+    .title {
+        font-size: 28px;
+    }
 }
 
 @import 'report';

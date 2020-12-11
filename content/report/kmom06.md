@@ -10,31 +10,26 @@ Template: kmom
 
 <section>
     <h2>Kmom02</h2>
-    <h3>Vad tycker du om SASS än så länge?</h3>
+    <h3>Hur känns det att tänka i termer av designelement och designprinciper?</h3>
     <p>
-        Jag har testat på det tidigare, men det var mycket mer oavancerat än vad som gjordes i detta kmom. Jag tycker det känns väldigt användbart.
-        Jag tycker om strukturen för det blir mindre rader, och lättare för ögat.
+        Det är ett kul ämne, det är inte så nytt för mig då jag har läst kurser tidigare i det men design-trender och tekniker ändras ju hela tiden så det finns ju alltid massa nytt att lära sig inom området.
     </p>
-    <h3>Är du bekant med Node, npm eller npm scripts (t.ex. npm run lint) sedan tidigare? Vad anser du om det?</h3>
+    <h3>Finns det något speciellt du vill lyfta fram från uppgiften “Utvärdera designprinciper som webbplatser använder sig av”. Vad tar du med dig från den uppgiften?</h3>
     <p>
-       Jag har använt det tidigare då jag skapade en todo-app med hjälp av bland annat vue.js. Tycker ännu det är lite svårt att förstå allt, men jag förstår mer än vad jag gjorde innan i alla fall! 
+       Det är intressant att kolla på. Tillslut ser man att det finns mönster, likheter bland liknande sidor. Att det är en tanke bakom allting och att det grundar sig i studier.
+       Man tänker inte alltid på det men bra design är ju inte bara nånting man kan gör just utan att ha gjort en förstudie.
     </p>
-    <h3>Hur kändes det att kompilera SASS till CSS, var det något du reflekterade över?</h3>
+    <h3>Gjorde du några uppdateringar till din egen sida utifrån vad du kom fram till i analysen?</h3>
     <p>
-       Det kändes rätt smidigt. Jag kan förstå fördelar med att återanvända grundtema som man sen kan skriva över och ändra på. Lite som child-themes i WordPress.
-       Samt att det förenklar det avsevärt när man importerar delar som moduler istället. Det blir inte så mycket i en och samma fil.
+       Jag gjorde några mindre uppdateringar. I headern lade jag in rubrik som ger en inblick i vad webbplatsens syfte är. Jag försökte jobba med hierarki där själva titeln är satt i större storlek och mitt namn är satt i mindre. Jag försökte även jobba med linjer. Vid gallery-sidan byttes bilder ut till faktiska verk. Bilderna ramades även in tillsammans med namn/förklaring för varje verk.
     </p>
-    <h3>Kommentera ditt tema, hur kan man beskriva dess design och hade du några planer på “design” när du byggde ditt tema?</h3>
+    <h3>Har du en uppfattning om “the final touch” och vad det kan vara i sammanhanget webbdesign?</h3>
     <p>
-       Designen är inte så speciell ännu. Jag planerar att utveckla det mera framöver. Min plan var endast att hålla det rätt simple och rent tillsvidare. Jag fokuserar mer att förstå grunden till koden eftersom jag känner att frontend kunskaperna ligger lite före pga tidigare studier.
-    </p>
-    <h3>Valde du att dela upp din kod? Vilka uppdelningar valde du att göra?</h3>
-    <p>
-       Nja inte så mycket kanske. Jag hämtade min ikoner från meta istället för att ladda in dem på index sidan. Samma med loggan, att den hämtas från meta. Sen hade jag en css-kod som jag importerade in i min scss kod. Den koden skrevs i kmom01.
+       Om man kollar på de sidor jag analyserade så skulle final touch vara de små effekterna som sker när man scrollar, animationer och hover-effekter. De gör att sidorna sticker ut och det blir en upplevelse att besöka sidorna.  
     </p>
     <h3>Vilken är din TIL för detta kmom?</h3>
     <p>
-       Min TIL för detta kmom är scss. Jag har testat på det förut men det var ett väldigt litet projekt. Den här gången kändes det som jag faktiskt utnyttjade det mera och förstod fördelarna med det.
+       Jag har kollat på designprinciper och webbtillgänglighet innan så det var inte så nytt denna gång. Google lighthouse har jag däremot inte använt mig av tidigare. Jag tyckte det var riktigt smidigt verktyg. Tidigare har jag använt mig av web developer tool och axe för att kontrollera semantik och tillgänglighet.
     </p>
     
 </section>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js">
+<html class="no-js" lang="sv">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -24,36 +24,25 @@
 
 </head>
 
-
 <body{% if config.theme_config.widescreen %} class="widescreen"{% endif %}>
+    <div class="header" id="myHeader">
 
-    <header class="site-header">
-    
-        
-        
-        
         {% for nav in pages["_meta"].meta.nav %}
-        <a id="nav-toggle" title="Toggle Menu" role="button" aria-controls="nav" aria-expanded="false" tabindex="1">
+        <a id="nav-toggle" title="Toggle Menu" role="button" aria-controls="nav" aria-expanded="false" tabindex="0">
             <i class="{{ nav.icon }}" aria-hidden="true" id="toggler"></i>
             <span class="sr-only">{{ nav.title }}</span>
         </a>
         {% endfor %}
-        
-        
-
+                
         <a>
             {% if pages["_meta"].meta.logo %}
-            <div class="logo" aria-hidden="true">
+            <div class="logo">
                 <a href="{{ "index"|link }}">
                     <img src="{{ base_url }}/{{ pages["_meta"].meta.logo|url }}" alt="logo" style="width: 60px; heigh: auto;" />
                 </a>
             </div>
             {% endif %}
         </a>
-
-
-
-
 
         <div id="nav" role="navigation" tabindex="-1">
             <ul>
@@ -64,24 +53,32 @@
                 {% endfor %}
             </ul>
         </div>
-    </header>
+    </div>
 
+    
+    {% for welcome in pages["_meta"].meta.welcome %}                       
+    <div class="header-container">
+
+        <div class="top-container">
+            <div class="stage">{{ welcome.title }}</div>
+            <h1 class="title">{{ welcome.description }}</h1>
+        </div>
+    </div>
+    {% endfor %}
 
     <div class="main" id="main" role="main">
         <div class="container">
             <div class="landingpage">
                     {{ content }}
                     {% for page in pages("report") %}
-                        
 
                             <div class="kmom-box">
 
                                 <h2>{{ page.title }}</h2>
-                                <a href="{{ page.url }}"><i class="fas fa-angle-right"></i></a>
+                                <a href="{{ page.url }}" type="button" aria-label="läs rapporten här"><i class="fas fa-angle-right"></i></a>
                                 <span class="prev">{{ page.description }}</span>
                             </div>
 
-                        
                     {% endfor %}
 
             

@@ -1,5 +1,5 @@
 .gallery {
-    width: 90%;
+    width: 80%;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -13,6 +13,16 @@
         max-width: 100%;
     }
 }
+
+.gallerydiv {
+    border-radius: 24px !important;
+    overflow: hidden !important;
+}
+
+.gallerydiv:hover {
+    box-shadow: 0 0 11px rgba(33, 33, 33, 0.2); 
+}
+
 @media (max-width: 992px) {
     .gallery {
         width: 100%;
@@ -24,5 +34,44 @@
     .gallery {
         grid-template-columns: 1fr;
     }
+}
+
+.casespreview {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.77778;
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    outline: none;
+    position: relative;
+    font-size: 0;
+}
+
+.casespic {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.77778;
+    font-size: 0;
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    width: 100%;
+    border: 0;
+    border-radius: 0;
+}
+
+.casesbody {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    line-height: 1.77778;
+    box-sizing: inherit;
+    margin: 0;
+    border: 0;
+    vertical-align: baseline;
+    outline: none;
+    flex-grow: 1;
+    padding: 30px 48px;
 }
 

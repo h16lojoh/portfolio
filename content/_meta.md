@@ -15,4 +15,7 @@ Social:
 nav:
     - title: Toggle meu
       icon: fa fa-bars
+welcome:
+    - title:  Louise Johansson
+      description:  Grafisk design & webbutveckling
 ---

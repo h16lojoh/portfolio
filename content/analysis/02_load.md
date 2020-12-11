@@ -1,5 +1,5 @@
 ---
-Title: Colors
+Title: Load
 Description: Redovisning av load.
 Template: analysis_paper
 
@@ -41,7 +41,7 @@ I denna rapport kommer en analys över laddningstider på webbsidor dokumenteras
 
 Med sidhastighet menas hastigheten för ett urval av sidor på en webbplats. Hastigheten kan beskrivas som "sidladdningstid", alltså den tid det tar att visa allt innehållet på en viss sida, eller "tid till första byte", hur lång tid det tar för din webbläsare att ta emot den första byten (Moz, 2020).
 
-Enligt Google (2020) är sidhastighet viktigt för användarupplevelsen. Studier visar att användare vill kunna hitta svar på sina frågor så snabbt som möjligt när de söker på webben. Det är även så att indexeringen en webbplats får i googles sökresultat påverkas av hur snabb en webbplats är. En låg sidhastighet leder till att sökmotorer kan genomsöka färre sidor och detta påverka indexering negativt (Moz, 2020). Artikeln 'why speed matter' har en långsam sidladdning negativa inverkan på affärsmål. Till exempel fann BBC att de förlorade 10% av användarna för varje sekund som deras webbplats tog för att ladda.
+Enligt Google (2020) är sidhastighet viktigt för användarupplevelsen. Studier visar att användare vill kunna hitta svar på sina frågor så snabbt som möjligt när de söker på webben. Det är även så att indexeringen en webbplats får i googles sökresultat påverkas av hur snabb en webbplats är. En låg sidhastighet leder till att sökmotorer kan genomsöka färre sidor och detta påverka indexering negativt (Moz, 2020). I artikeln 'why speed matter' förklaras att en långsam sidladdning även har en negativ inverkan på affärsmål. Till exempel fann BBC att de förlorade 10% av användarna för varje sekund som deras webbplats tog för att ladda.
 
 
 
@@ -62,7 +62,7 @@ Webbsplatserna och respektive sida som kommer att ingå i undersökningen är:
       <a href="https://www.blocket.se">Länk: Första sidan</a>
    </li>
    <li>
-      <a href="https://www.blocket.se/annonser/hela_sverige/fordon?cg=1000/">Länk: Fordon</a>
+      <a href="https://www.blocket.se/annonser/hela_sverige/fordon?cg=1000/">Länk: Kategorisida</a>
    </li>
    <li>
       <a href="https://blocket.zendesk.com/hc/sv">Länk: Kontakt</a>
@@ -76,7 +76,7 @@ Webbsplatserna och respektive sida som kommer att ingå i undersökningen är:
       <a href="https://www.tradera.com/">Länk: Första sidan</a>
    </li>
    <li>
-      <a href="https://www.tradera.com/fordon-batar-delar-10">Länk: Fordon</a>
+      <a href="https://www.tradera.com/fordon-batar-delar-10">Länk: Kategorisida</a>
    </li>
    <li>
       <a href="http://info.tradera.com/en/#humany-vanliga-fragor-och-svar=/contact">Länk: Kontakt</a>
@@ -89,7 +89,7 @@ Webbsplatserna och respektive sida som kommer att ingå i undersökningen är:
       <a href="https://citiboard.se/">Länk: Första sidan</a>
    </li>
    <li>
-      <a href="https://citiboard.se/fordon">Länk: Fordon</a>
+      <a href="https://citiboard.se/fordon">Länk: Kategorisida</a>
    </li>
    <li>
       <a href="https://citiboard.se/contact">Länk: Kontakt</a>
@@ -149,7 +149,12 @@ Analys
 -----------------------
 Webbplatserna skiljer sig från varandra i storlek så det är inte så förvånande att resultaten skiljer sig från varandra. 
 
-Vid Google PageSpeed fick två av blockets sidor, första sida och kategorisida, bäst resultat jämfört med övriga. Vid första sidan kan detta bero på att både Tradera och cityboards förstasidor innehåller mycket bilder och länkar såsom utvalda bilder från olika kategorier till exempel 'senaste annonser' och liknande. Blocket innehåller däremot begränsat med länkar och bilder, där finns en sökruta, kategorimeny samt några bilder och länkar till 'Hitta bättre', 'Aktuellt på blocket' och 'Mer blocket', däremot finns inga kategoribilder. Traderas kontaktsida fick det högsta resultatet av alla mätta sidor, hela 43 i medel. Detta kan bero på att denna sidor innehåller noll antal bilder. Sidan innehåller enbart en sökruta och länkar till underkategorier kopplade till kontaktinformation. <b>Blockets webbplats</b> är vinnare när det kommer till Google PageSpeed då två av sidorna fick högst resultat. <b>Traderas kontakt-sida</b> är vinnare när det kommer till mätta sidor (ej webbplatsen i helhet).
+Vid Google PageSpeed fick två av blockets sidor, första-sida och kategorisida, bäst resultat jämfört med övriga. Vid första sidan kan detta bero på att både Tradera och cityboards förstasidor innehåller mycket bilder och länkar såsom utvalda bilder från olika kategorier, till exempel 'senaste annonser' och liknande. Blocket innehåller däremot begränsat med länkar och bilder, där finns en sökruta, kategorimeny samt några bilder och länkar till 'Hitta bättre', 'Aktuellt på blocket' och 'Mer blocket'. På blocket finns däremot finns inga kategoribilder. 
+
+Traderas kontaktsida fick det högsta resultatet av alla mätta sidor, hela 43 i medel. Detta kan bero på att denna sidor innehåller noll antal bilder. Sidan innehåller enbart en sökruta och länkar till underkategorier kopplade till kontaktinformation. 
+
+<b>Blockets webbplats</b> är vinnare när det kommer till Google PageSpeed då två av sidorna fick högst resultat. 
+<b>Traderas kontakt-sida</b> är vinnare när det kommer till mätta sidor (ej webbplatsen i helhet).
 
 Vid Devtools network laddade alla cityboards sidor in snabbast (2.67, 2.24, 1.56). Det kan eventuellt bero på att cityboard egentligen är skapad för att användas i mobilen, möjligtvis är innehållet såsom bilder mobilanpassade även när sidorna besöks på webben. Cityboard är vinnre när det kommer till laddningstid mätt med devtools.
 
@@ -174,8 +179,10 @@ Filer såsom CSS, JavaScript och HTML kan även optimeras genom att ta bort mell
 
 <img src="../assets/img/blocket_bild.PNG" alt="Screenshot av blocket hemsida" width="100%" height="auto">
 Blocket kategorisida
+<br>
 <img src="../assets/img/cityboard_bild.PNG" alt="Screenshot av cityboard hemsida" width="100%" height="auto">
 citybord kategorisida
+<br>
 <img src="../assets/img/tradera_bild.PNG" alt="Screenshot av blocket hemsida" width="100%" height="auto">
 tradera kategorisida
 

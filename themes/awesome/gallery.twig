@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js">
+<html class="no-js" lang="sv">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -23,62 +23,70 @@
     {% endif %}
 
 </head>
-
-
-
 <body{% if config.theme_config.widescreen %} class="widescreen"{% endif %}>
+    <div class="header" id="myHeader">
 
-    <header class="site-header">
-            
-            {% for nav in pages["_meta"].meta.nav %}
-            <a id="nav-toggle" title="Toggle Menu" role="button" aria-controls="nav" aria-expanded="false" tabindex="1">
-                <i class="{{ nav.icon }}" aria-hidden="true" id="toggler"></i>
-                <span class="sr-only">{{ nav.title }}</span>
-            </a>
-            {% endfor %}
-            
-            <a>
-                {% if pages["_meta"].meta.logo %}
-                <div class="logo" aria-hidden="true">
-                    <a href="{{ "index"|link }}">
-                        <img src="{{ base_url }}/{{ pages["_meta"].meta.logo|url }}" alt="logo" style="width: 60px; heigh: auto;" />
-                    </a>
-                </div>
-                {% endif %}
-            </a>
-
-            <div id="nav" role="navigation" tabindex="-1">
-                <ul>
-                    {% for page in pages(depthOffset=-1) if page.title and not page.hidden %}
-                    <li{% if page.id == current_page.id %} class="active" {% endif %}>
-                        <a href="{{ page.url }}">{{ page.title }}</a>
-                    </li>
-                    {% endfor %}
-                </ul>
+        {% for nav in pages["_meta"].meta.nav %}
+        <a id="nav-toggle" title="Toggle Menu" role="button" aria-controls="nav" aria-expanded="false" tabindex="0">
+            <i class="{{ nav.icon }}" aria-hidden="true" id="toggler"></i>
+            <span class="sr-only">{{ nav.title }}</span>
+        </a>
+        {% endfor %}
+                
+        <a>
+            {% if pages["_meta"].meta.logo %}
+            <div class="logo">
+                <a href="{{ "index"|link }}">
+                    <img src="{{ base_url }}/{{ pages["_meta"].meta.logo|url }}" alt="logo" style="width: 60px; heigh: auto;" />
+                </a>
             </div>
-    </header>
+            {% endif %}
+        </a>
 
-
-
-<div class="main" id="main" role="main">
-
-        <div class="gallery">
-            {% for image in meta.images %}
-                <div>
-                    <a href="{{ base_url }}/image/gallery/{{ image.url }}" target="_blank">
-                        <picture>
-                            <source media="(min-width: 668px)" srcset="{{ base_url }}/image/gallery/{{ image.url }}">
-                            <source media="(min-width: 376px)" srcset="{{ base_url }}/image/gallery/{{ image.url }}&w=667">
-                            <img src="{{ base_url }}/image/gallery/{{ image.url }}&w=375" alt="{{ image.alt }}">
-                        </picture>
-                    </a>
-
-                </div>
-            {% endfor %}
+        <div id="nav" role="navigation" tabindex="-1">
+            <ul>
+                {% for page in pages(depthOffset=-1) if page.title and not page.hidden %}
+                <li{% if page.id == current_page.id %} class="active" {% endif %}>
+                    <a href="{{ page.url }}">{{ page.title }}</a>
+                </li>
+                {% endfor %}
+            </ul>
         </div>
-    
-</div>
+    </div>
 
+    
+    {% for welcome in pages["_meta"].meta.welcome %}                       
+    <div class="header-container">
+
+        <div class="top-container">
+            <div class="stage">{{ welcome.title }}</div>
+            <h1 class="title">{{ welcome.description }}</h1>
+        </div>
+    </div>
+    {% endfor %}
+
+
+    <div class="main" id="main" role="main">
+            <div class="gallery">
+                {% for image in meta.images %}
+                <div class="gallerydiv">
+                    <div class="casespreview">
+                        <a href="{{ base_url }}/image/gallery/{{ image.url }}" target="_blank">
+                            <picture class="casespic">
+                                <source media="(min-width: 668px)" srcset="{{ base_url }}/image/gallery/{{ image.url }}">
+                                <source media="(min-width: 376px)" srcset="{{ base_url }}/image/gallery/{{ image.url }}&w=667">
+                                <img src="{{ base_url }}/image/gallery/{{ image.url }}&w=375" alt="{{ image.alt }}">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="casesbody">
+                        <h2 class="casesinfo h4">{{ image.title }}</h4>
+                        <div class="casestext">{{ image.alt }}</div>
+                    </div>
+                </div>  
+                {% endfor %}    
+            </div>
+    </div> <!--main end-->
 
     <footer class="site-footer">
         <div class="footer">
