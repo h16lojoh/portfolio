@@ -9,7 +9,7 @@ Template: kmom
 
 
 <section>
-    <h2>Kmom02</h2>
+    <h2>Kmom06</h2>
     <h3>Hur känns det att tänka i termer av designelement och designprinciper?</h3>
     <p>
         Det är ett kul ämne, det är inte så nytt för mig då jag har läst kurser tidigare i det men design-trender och tekniker ändras ju hela tiden så det finns ju alltid massa nytt att lära sig inom området.
