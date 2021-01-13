@@ -16,7 +16,10 @@ Template: kmom
    För webbplatsen valde jag att skapa en portfolio till kund nummer 3. Jag valde att kopiera grunden som byggts för me/portfolio. Jag valde att göra på detta sättet eftersom även me/portfolion var en portfolio-sida och jag visste att det skulle finnas en del likheter mellan dessa, och då återanvändbara element.
    <br>
    <br>
-   Webbplatsen består utav tre sidor, en förstasida, en about-sida och en galleri-sida, som presenterar projekt som kunden jobbar/har jobbat med. Första sidan innehåller en sektion där kunden presenterar lite av sina kunskaper inom webbdesign, webbutveckling och webbprogrammering. På samtliga sidor används en flash/hero-bild, bilden är samma på alla sidor och föreställer kund 3. I navigationen finns kundens logga som föreställer initialerna B och G, loggan används även som favicon. Navigationen är responsiv och blir en hamburgarmeny vid mobil. Footern innehåller kontaktinformation. 
+   Webbplatsen består utav tre sidor, en förstasida, en about-sida och en galleri-sida. Första sidan innehåller en sektion där kunden presenterar lite av sina kunskaper inom webbdesign, webbutveckling och webbprogrammering. Första sidan presenterar även några utvalda galleri-bilder. Galleri sidan presenterar projekt som kunden jobbar/har jobbat med. About sidan presenterar kunden och förmedlar vad för syfte webbplatsen har, att presentera/marknadsföra Bew Gorp. 
+   <br>
+   <br>
+   På samtliga sidor används en flash/hero-bild, bilden är samma på alla sidor och föreställer kund 3. I navigationen finns kundens logga som föreställer initialerna B och G, loggan används även som favicon. Navigationen är responsiv och blir en hamburgarmeny vid mobil. Footern innehåller kontaktinformation. 
    <br>
    <br>
    Innehållet anser jag vara relevant för kunden. Webbplatsen presenterar kundens kunskaper, tidigare arbeten/verk, kontaktuppgifter och personlig presentation. På about-sidan finns den personliga presentationen av kunden. Webbplatsen är bildrik och Cimage används för att få rätt storlek på bilderna. De flesta bilderna återfinns på galleri-sidan som ämnar att visa upp tidigare arbeten/verk som kunden skapa. På första sidan visar kunden upp några utvalda arbeten som anses vara de mest se-värda för de som besöker webbplatsen.
@@ -25,12 +28,18 @@ Template: kmom
    <h4>Tema</h4>
    <p>
    Webbplatsens tema heter 'awesome'. Den bygger på temat från tidigare uppgifter. Temat är anpassat till kund nummer 3.
-   Temat använder sig utav SASS. Koden är uppdelad i flera moduler och variabler används för återkommande färger och även style för border.
-   Färgerna och typsnitten är valda så att de ska passa kundens önskemål.
+   Temat använder sig utav SASS. Koden är uppdelad i flera moduler och variabler används för återkommande färger och även style för border. Färgerna och typsnitten är valda så att de ska passa kundens önskemål. 
    <br>
    <br>
    Jag har medvetet använt mig utav designelement/principer för att uppnå en god design som passar kunden.
    På about-sidan finnas en länk till en dold sida som innehåller dokumentation över färger, typsnitt och designprinciper. Där diskuteras designvalen mer utförligt.
+   </p>
+
+   <h4>Tema alternativt</h4>
+
+   <p>
+   Webbplatsen använder även ett ytterligare tema som går att aktivera ifrån samtliga sidors footer. Temat skiljer sig från grundtema i utseende. Temat använder andra färger, typsnitt och stuktur. Temat är responsivt och uppnår 100% tillgänglighet.
+   Bilder är även här anpassade med cimage. Mer om temat står på den dolda sidan.
    </p>
 
    <h4>Responsivitet och Tillgänglighet</h4>
