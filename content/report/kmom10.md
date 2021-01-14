@@ -45,7 +45,21 @@ Template: kmom
    <h4>Responsivitet och Tillgänglighet</h4>
 
    <p>
-   Webbplatsen använder sig utav grid för att uppnå responsivitet. Bilder är anpassade med cimage och < image >/srcset för att även de ska vara optimerade för en responsiv design. Samtliga sidor uppnår 100% i “accessibility” enligt Lighthouse. 
+   Webbplatsen använder sig utav grid för att uppnå responsivitet. Bilder är anpassade med cimage och < image >/srcset för att även de ska vara optimerade för en responsiv design. Samtliga sidor uppnår 100% i “accessibility” enligt Lighthouse. Toptal - Colorblind Web Page Filter har andvänds för att anpassa färgval efter färgblindhet, för att inte göra elementens funktionalitet beroende av färgval.
+   Alla sidor är validerade med godkänt resultat.
+   <ul>
+    <li><a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fwww.student.bth.se%2F~lojh20%2Fdbwebb-kurser%2Fdesign%2Fme%2Fkmom10%2Findex.php">validator/index</a></li>
+    <li><a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fwww.student.bth.se%2F%7Elojh20%2Fdbwebb-kurser%2Fdesign%2Fme%2Fkmom10%2Fgallery">validator/gallery</a></li>
+    <li><a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fwww.student.bth.se%2F%7Elojh20%2Fdbwebb-kurser%2Fdesign%2Fme%2Fkmom10%2Fme">validator/me</a></li>
+   <li><a href="https://www.toptal.com/designers/colorfilter?orig_uri=http://www.student.bth.se/~lojh20/dbwebb-kurser/design/me/kmom10/index.php&process_type=protan">Colorfilter</a></li>   
+   <li><a href="https://googlechrome.github.io/lighthouse/viewer/?psiurl=http%3A%2F%2Fwww.student.bth.se%2F%7Elojh20%2Fdbwebb-kurser%2Fdesign%2Fme%2Fkmom10%2F&strategy=mobile&category=performance&category=accessibility&category=best-practices&category=seo&category=pwa&utm_source=lh-chrome-ext">Lighthouse/index</a></li>  
+   <li><a href="https://googlechrome.github.io/lighthouse/viewer/?psiurl=http%3A%2F%2Fwww.student.bth.se%2F%7Elojh20%2Fdbwebb-kurser%2Fdesign%2Fme%2Fkmom10%2Fgallery&strategy=mobile&category=performance&category=accessibility&category=best-practices&category=seo&category=pwa&utm_source=lh-chrome-ext">Lighthouse/gallery</a></li> 
+   <li><a href="https://googlechrome.github.io/lighthouse/viewer/?psiurl=http%3A%2F%2Fwww.student.bth.se%2F%7Elojh20%2Fdbwebb-kurser%2Fdesign%2Fme%2Fkmom10%2Fme&strategy=mobile&category=performance&category=accessibility&category=best-practices&category=seo&category=pwa&utm_source=lh-chrome-ext">Lighthouse/me</a></li>  
+
+
+
+
+</ul>
    </p>
 
    <h3>1.2 Skriv ett allmänt stycke om hur projektet gick att genomföra. Problem/lösningar/strul/enkelt/svårt/snabbt/lång tid, etc. Var projektet lätt eller svårt? Tog det lång tid? Vad var svårt och vad gick lätt? Var det ett bra och rimligt projekt för denna kursen?</h3>
